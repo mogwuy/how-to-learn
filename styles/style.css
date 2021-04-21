@@ -30,12 +30,7 @@ a {
   width: 568px;
 }
 /* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
-}
+
 
 .logo {
   width:183px;
@@ -265,8 +260,6 @@ a {
 }
 
 .section-subtitle_theme_dark {
-  padding-top: 20px;
-  margin: 0px;
   position: relative;
   z-index: 1;
   line-height: 34px;
@@ -282,9 +275,10 @@ a {
 }
 
 .table__cell_theme_dark {
-  width:200px;
-  position: relative;
-  z-index: 1;
+  width: 200px;
+  color: white;
+  margin-right: 0;
+  margin-top: 80px;
 }
 
 .table__heding_theme_dark {

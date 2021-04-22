@@ -317,11 +317,11 @@ a {
 }
 
 .footer__column_content_info {
-
+  margin-right: 20px;
 }
 
 .footer__column_content_social {
-
+  margin-right: 10px;
 }
 
 .logo_footer {
@@ -338,11 +338,10 @@ a {
 }
 
 .footer__column-heading {
-  margin-bottom: 20px;
   line-height: 30px;
   font-size: 18px;
   font-weight: 700;
-  margin-left: 0;
+  margin: 0;
   padding-left: 0;
 
 }
@@ -357,9 +356,9 @@ a {
 }
 
 .footer__social-icon {
-  margin: 0px 10px -2px 0px
+  margin: 0px 10px -3px 0px
 }
 
-.footer_column-link {
-
+.footer__column-link {
+ margin-top:20px;
 }

@@ -44,7 +44,7 @@ opacity: 0.2;
   background-size: cover;
 }
 
-.header_place-logo {
+.logo_place-header {
   position: absolute;
   top: 30px;
   left: 64px;
@@ -56,32 +56,32 @@ opacity: 0.2;
   width:765px;
   height: 608px;
   position: absolute;
-  right: 0px;
-  bottom: 0px;
+  right: 0;
+  bottom: 0;
   background-size: cover;
   z-index:0;
 }
 
-.header_square-pic {
+.header__square-pic {
   width:568px;
   height:568px;
   background-color: #2F80ED;
   position: absolute;
   top: 64px;
-  right: 0px;
+  right: 0;
   z-index: -1;
 }
 
 .header__title {
   width: 730px;
-  margin-left: 64px;
+  margin: 0 0 0 64px;
   line-height: 96px;
   font-size: 102px;
   font-weight: 700;
   z-index: 2;
  }
 
-.header_subtitle {
+.header__subtitle {
   width: 388px;
   position: absolute;
   bottom: 30px;
@@ -89,6 +89,7 @@ opacity: 0.2;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
+  margin: 0;
  }
 
 .header__link {
@@ -112,18 +113,23 @@ opacity: 0.2;
   font-size: 18px;
   font-weight: normal;
   color: #2F80ED;
+  margin: 0;
 }
 
-.two-columns__maintext {
+.two-columns__main-text {
   width: 80%;
   min-width:784px;
 }
 
-.two-columns__paragraf {
-  margin: 0px 0px 30px 0px;
+.two-columns__paragraph {
+  margin: 0 0 30px 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+}
+
+.two-columns__paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .two-columns__span {
@@ -138,17 +144,17 @@ opacity: 0.2;
 
 .section-title {
   text-align: center;
-  min-width: 60%;
+  width: 60%;
   line-height: 1.15;
   font-size: 60px;
   font-weight: 700;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .section-subtitle {
-  margin: 20px 0 0 0;
+  margin: 20px auto 0;
   text-align: center;
-  min-width: 60%;
+  width: 60%;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -168,7 +174,7 @@ opacity: 0.2;
 }
 
 .table__heading {
-  margin: 0px;
+  margin: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 700;
@@ -182,16 +188,15 @@ opacity: 0.2;
 }
 
 .feynman {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
-  background-color: #f2f2f2;
+  height: 790px;
+  background: #F2F2F2 url("../images/feynman.png") no-repeat bottom left;
+  background-size:867px 637px;
+  padding-top: 100px;
   margin-top: 100px;
   position: relative;
   z-index: 1;
 }
 .feynman__title {
-  padding-top: 100px;
   width: 648px;
   margin: 0 auto;
   text-align: center;
@@ -202,7 +207,7 @@ opacity: 0.2;
 }
 
 .feynman__subtitle {
-  margin-top: 70px;
+  margin-top: 70px 0 0 0;
   text-align: center;
   position: relative;
   line-height: 51px;
@@ -220,21 +225,7 @@ opacity: 0.2;
   /* Цвет ссылки и отмена подчеркивания в "a" */
 }
 
-.feynman__image {
-  background-image: url("../images/feynman.png");
-  width: 867px;
-  height: 637px;
-  position: absolute;
-  left: 0px;
-  bottom: 0px;
-  background-size: cover;
-  z-index: -1;
-}
-
 .kaufman {
-  height: 100vh;
-  min-height: 600px;
-  max-height: 756px;
   background-color: #1f1f1f;
   position: relative;
   color: #ffffff;
@@ -248,18 +239,16 @@ opacity: 0.2;
   height: 877px;
   position: absolute;
   right: -210px;
-  top: 0px;
+  top: 0;
   background-size: cover;
   z-index: -1;
 }
+
 
 .section-title_theme_dark {
   padding-top: 90px;
   position: relative;
   z-index: 1;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: 700;
 }
 
 .section-subtitle_theme_dark {
@@ -271,7 +260,6 @@ opacity: 0.2;
 }
 
 .table_theme_dark {
-  padding-top:80px;
   position: relative;
   z-index: 1;
   margin-bottom: 90px;
@@ -297,8 +285,8 @@ opacity: 0.2;
 }
 
 .footer {
-  margin-top: 0px;
-  padding-top: 60px;
+  margin-top: 0;
+  padding: 60px 0 40px 0;
   background-color: #1f1f1f;
   color: #ffffff;
 }
@@ -311,7 +299,7 @@ opacity: 0.2;
 }
 
 .footer__column {
-  min-height: 350px;
+  min-height: 250px;
 }
 
 .footer__column_content_copyright {
@@ -320,19 +308,18 @@ opacity: 0.2;
 }
 
 .footer__column_content_info {
-  margin-right: 20px;
+
 }
 
 .footer__column_content_social {
-  margin-right: 10px;
+
 }
 
-.logo_footer {
+.logo_place-footer {
   background-image: url('../images/logo_place_footer.svg');
 }
 
 .footer__author {
-  position:absolute;
   left: 0;
   bottom: 18px;
   line-height: 25px;

@@ -2,6 +2,11 @@ a {
   color: #2F80ED;
   text-decoration: none;
 }
+
+a:hover {
+opacity: 0.2;
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -22,6 +27,7 @@ a {
   position: relative;
   display: flex;
   align-items: center;
+  z-index: 2;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
@@ -35,7 +41,6 @@ a {
 .logo {
   width:183px;
   height: 32px;
-  z-index: 2;
   background-size: cover;
 }
 
@@ -54,7 +59,7 @@ a {
   right: 0px;
   bottom: 0px;
   background-size: cover;
-  z-index:2;
+  z-index:0;
 }
 
 .header_square-pic {
@@ -64,7 +69,7 @@ a {
   position: absolute;
   top: 64px;
   right: 0px;
-  z-index: 1;
+  z-index: -1;
 }
 
 .header__title {
@@ -73,8 +78,7 @@ a {
   line-height: 96px;
   font-size: 102px;
   font-weight: 700;
-  z-index: 3;
-}
+ }
 
 .header_subtitle {
   width: 388px;
@@ -84,8 +88,7 @@ a {
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  z-index: 3;
-}
+ }
 
 .header__link {
 /* Перенес в класс "a", чтобы применялось ко всем ссылкам */
@@ -184,6 +187,7 @@ a {
   background-color: #f2f2f2;
   margin-top: 100px;
   position: relative;
+  z-index: 1;
 }
 .feynman__title {
   padding-top: 100px;
@@ -191,7 +195,6 @@ a {
   margin: 0 auto;
   text-align: center;
   position: relative;
-  z-index: 1;
   line-height: 1.15;
   font-size: 120px;
   font-weight: 700;
@@ -201,7 +204,6 @@ a {
   margin-top: 70px;
   text-align: center;
   position: relative;
-  z-index: 1;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -211,7 +213,6 @@ a {
   position: absolute;
   top: 50%;
   right: 48px;
-  z-index: 1;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -226,7 +227,7 @@ a {
   left: 0px;
   bottom: 0px;
   background-size: cover;
-  z-index: 0;
+  z-index: -1;
 }
 
 .kaufman {
@@ -237,6 +238,7 @@ a {
   position: relative;
   color: #ffffff;
   overflow:hidden;
+  z-index: 1;
 }
 
 .kaufman__triangle {
@@ -247,7 +249,7 @@ a {
   right: -210px;
   top: 0px;
   background-size: cover;
-  z-index: 0;
+  z-index: -1;
 }
 
 .section-title_theme_dark {
@@ -343,7 +345,6 @@ a {
   font-weight: 700;
   margin: 0;
   padding-left: 0;
-
 }
 
 .footer__column_links {

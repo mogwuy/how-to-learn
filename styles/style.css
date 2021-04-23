@@ -347,6 +347,7 @@ opacity: 0.2;
   padding-left: 0;
 }
 
+
 .footer__column_links {
   list-style-type: none;
   margin-bottom: 16px;
@@ -361,5 +362,6 @@ opacity: 0.2;
 }
 
 .footer__column-link {
- margin-top:20px;
+  margin: 20px 0 0 0;
+  padding-left: 0;
 }

@@ -1,0 +1,9 @@
+.cards__item {
+  width: 200px; /*В брифе не указан размер карточки, а без него блоки в карточках не встают*/
+  padding-top: 60px;
+  margin-right: 100px;
+}
+
+.cards__item:last-of-type {
+  margin-right: 0px;
+}

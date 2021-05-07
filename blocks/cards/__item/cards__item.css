@@ -1,9 +1,10 @@
 .cards__item {
-  width: 200px; /*В брифе не указан размер карточки, а без него блоки в карточках не встают*/
+  width: 240px; 
   padding-top: 60px;
   margin-right: 100px;
+  text-align: center;
 }
 
-.cards__item:last-of-type {
+.cards__item:nth-last-child(3) {
   margin-right: 0px;
 }

@@ -1,5 +1,6 @@
 .khan__book-pic {
   width: 620px;
   height: 608px;
-  object-fit: cover; /*Не знаю можно ли так? Иначе картинку плющит. */
+  object-fit: cover;
+  object-position: left top;
 }
